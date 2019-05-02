@@ -12,6 +12,8 @@
 		2C52DC58227B496900E49BFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C52DC56227B496900E49BFC /* Main.storyboard */; };
 		2C52DC5A227B496A00E49BFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C52DC59227B496A00E49BFC /* Assets.xcassets */; };
 		2C52DC5D227B496A00E49BFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C52DC5B227B496A00E49BFC /* LaunchScreen.storyboard */; };
+		2C52DC68227B4ABB00E49BFC /* SF-Compact-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C52DC67227B4ABB00E49BFC /* SF-Compact-Display-Semibold.otf */; };
+		2C52DC6A227B4ADB00E49BFC /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C52DC69227B4ADB00E49BFC /* SF-Pro-Text-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2C52DC59227B496A00E49BFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C52DC5C227B496A00E49BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C52DC5E227B496A00E49BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C52DC67227B4ABB00E49BFC /* SF-Compact-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Semibold.otf"; sourceTree = "<group>"; };
+		2C52DC69227B4ADB00E49BFC /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		2C52DC51227B496900E49BFC /* Tekki */ = {
 			isa = PBXGroup;
 			children = (
+				2C52DC64227B4A4600E49BFC /* Fonts */,
 				2C52DC52227B496900E49BFC /* AppDelegate.swift */,
 				2C52DC54227B496900E49BFC /* ViewController.swift */,
 				2C52DC56227B496900E49BFC /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				2C52DC5E227B496A00E49BFC /* Info.plist */,
 			);
 			path = Tekki;
+			sourceTree = "<group>";
+		};
+		2C52DC64227B4A4600E49BFC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2C52DC69227B4ADB00E49BFC /* SF-Pro-Text-Medium.otf */,
+				2C52DC67227B4ABB00E49BFC /* SF-Compact-Display-Semibold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +138,8 @@
 			files = (
 				2C52DC5D227B496A00E49BFC /* LaunchScreen.storyboard in Resources */,
 				2C52DC5A227B496A00E49BFC /* Assets.xcassets in Resources */,
+				2C52DC68227B4ABB00E49BFC /* SF-Compact-Display-Semibold.otf in Resources */,
+				2C52DC6A227B4ADB00E49BFC /* SF-Pro-Text-Medium.otf in Resources */,
 				2C52DC58227B496900E49BFC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
