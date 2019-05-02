@@ -9,9 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var Celebrity = ["le Zinedine Zidane ", "le Karl Lagarfeld ", "le Madonna ", "le Steve Jobs ", "le John Travolata "]
+    let Celebrity = ["le Zinedine Zidane ", "le Karl Lagarfeld ", "la Madonna ", "le Steve Jobs ", "le Neil Amstrong "]
     
-    var QuoteJoke = ["du surprise party !", "de la raclette party !", "de la blague pourrit !", "du codage swift !", "de la natation sincro !"]
+    let QuoteJoke = ["du surprise party !", "de la raclette party !", "de la chanson Francaise", "des soirée déguisé", "du karaoke party !"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var LabelQuote: UILabel!
     
     @IBAction func ChangeQuote() {
+        let Celebrities = Celebrity[Int(arc4random_uniform(UInt32(Celebrity.count)))]
+        
+        let Activities = QuoteJoke[Int(arc4random_uniform(UInt32(QuoteJoke.count)))]
+
+        LabelQuote.text = "Je suis " + Celebrities + Activities
         
     }
 }
