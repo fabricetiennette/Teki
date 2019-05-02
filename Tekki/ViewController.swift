@@ -9,12 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var Celebrity = ["le Zinedine Zidane ", "le Karl Lagarfeld ", "le Madonna ", "le Steve Jobs ", "le John Travolata "]
+    
+    var QuoteJoke = ["du surprise party !", "de la raclette party !", "de la blague pourrit !", "du codage swift !", "de la natation sincro !"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet weak var LabelQuote: UILabel!
+    
+    @IBAction func ChangeQuote() {
+        
+    }
 }
 
