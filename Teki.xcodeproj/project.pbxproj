@@ -14,10 +14,11 @@
 		2C52DC5D227B496A00E49BFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C52DC5B227B496A00E49BFC /* LaunchScreen.storyboard */; };
 		2C52DC68227B4ABB00E49BFC /* SF-Compact-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C52DC67227B4ABB00E49BFC /* SF-Compact-Display-Semibold.otf */; };
 		2C52DC6A227B4ADB00E49BFC /* SF-Pro-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2C52DC69227B4ADB00E49BFC /* SF-Pro-Text-Medium.otf */; };
+		2C596929227C49FD005D928E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C596928227C49FD005D928E /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C52DC4F227B496900E49BFC /* Tekki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tekki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C52DC4F227B496900E49BFC /* Teki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C52DC52227B496900E49BFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C52DC54227B496900E49BFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C52DC57227B496900E49BFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -26,6 +27,7 @@
 		2C52DC5E227B496A00E49BFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C52DC67227B4ABB00E49BFC /* SF-Compact-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Display-Semibold.otf"; sourceTree = "<group>"; };
 		2C52DC69227B4ADB00E49BFC /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
+		2C596928227C49FD005D928E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +44,8 @@
 		2C52DC46227B496900E49BFC = {
 			isa = PBXGroup;
 			children = (
-				2C52DC51227B496900E49BFC /* Tekki */,
+				2C596928227C49FD005D928E /* Default-568h@2x.png */,
+				2C52DC51227B496900E49BFC /* Teki */,
 				2C52DC50227B496900E49BFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,12 +53,12 @@
 		2C52DC50227B496900E49BFC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2C52DC4F227B496900E49BFC /* Tekki.app */,
+				2C52DC4F227B496900E49BFC /* Teki.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C52DC51227B496900E49BFC /* Tekki */ = {
+		2C52DC51227B496900E49BFC /* Teki */ = {
 			isa = PBXGroup;
 			children = (
 				2C52DC64227B4A4600E49BFC /* Fonts */,
@@ -66,7 +69,7 @@
 				2C52DC5B227B496A00E49BFC /* LaunchScreen.storyboard */,
 				2C52DC5E227B496A00E49BFC /* Info.plist */,
 			);
-			path = Tekki;
+			path = Teki;
 			sourceTree = "<group>";
 		};
 		2C52DC64227B4A4600E49BFC /* Fonts */ = {
@@ -81,9 +84,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C52DC4E227B496900E49BFC /* Tekki */ = {
+		2C52DC4E227B496900E49BFC /* Teki */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C52DC61227B496A00E49BFC /* Build configuration list for PBXNativeTarget "Tekki" */;
+			buildConfigurationList = 2C52DC61227B496A00E49BFC /* Build configuration list for PBXNativeTarget "Teki" */;
 			buildPhases = (
 				2C52DC4B227B496900E49BFC /* Sources */,
 				2C52DC4C227B496900E49BFC /* Frameworks */,
@@ -93,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = Tekki;
+			name = Teki;
 			productName = Tekki;
-			productReference = 2C52DC4F227B496900E49BFC /* Tekki.app */;
+			productReference = 2C52DC4F227B496900E49BFC /* Teki.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2C52DC4A227B496900E49BFC /* Build configuration list for PBXProject "Tekki" */;
+			buildConfigurationList = 2C52DC4A227B496900E49BFC /* Build configuration list for PBXProject "Teki" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C52DC4E227B496900E49BFC /* Tekki */,
+				2C52DC4E227B496900E49BFC /* Teki */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +144,7 @@
 				2C52DC68227B4ABB00E49BFC /* SF-Compact-Display-Semibold.otf in Resources */,
 				2C52DC6A227B4ADB00E49BFC /* SF-Pro-Text-Medium.otf in Resources */,
 				2C52DC58227B496900E49BFC /* Main.storyboard in Resources */,
+				2C596929227C49FD005D928E /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C52DC4A227B496900E49BFC /* Build configuration list for PBXProject "Tekki" */ = {
+		2C52DC4A227B496900E49BFC /* Build configuration list for PBXProject "Teki" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C52DC5F227B496A00E49BFC /* Debug */,
@@ -342,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C52DC61227B496A00E49BFC /* Build configuration list for PBXNativeTarget "Tekki" */ = {
+		2C52DC61227B496A00E49BFC /* Build configuration list for PBXNativeTarget "Teki" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2C52DC62227B496A00E49BFC /* Debug */,

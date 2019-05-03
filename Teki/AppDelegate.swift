@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Tekki
+//  Teki
 //
 //  Created by Fabrice Etiennette on 02/05/2019.
 //  Copyright © 2019 Fabrice Etiennette. All rights reserved.
