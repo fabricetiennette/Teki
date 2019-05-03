@@ -46,7 +46,6 @@
 		2C52DC46227B496900E49BFC = {
 			isa = PBXGroup;
 			children = (
-				2C55BB6A227C6D37007CBCA6 /* Default-568h@2x.png */,
 				2C52DC51227B496900E49BFC /* Teki */,
 				2C52DC50227B496900E49BFC /* Products */,
 			);
@@ -69,6 +68,7 @@
 				2C52DC56227B496900E49BFC /* Main.storyboard */,
 				2C55BB6C227C6D84007CBCA6 /* extension.swift */,
 				2C52DC59227B496A00E49BFC /* Assets.xcassets */,
+				2C55BB6A227C6D37007CBCA6 /* Default-568h@2x.png */,
 				2C52DC5B227B496A00E49BFC /* LaunchScreen.storyboard */,
 				2C52DC5E227B496A00E49BFC /* Info.plist */,
 			);
