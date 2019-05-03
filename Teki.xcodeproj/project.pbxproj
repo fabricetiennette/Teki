@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0201ACC6F7B36CBFD428F9B7 /* Pods-Teki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teki.release.xcconfig"; path = "Target Support Files/Pods-Teki/Pods-Teki.release.xcconfig"; sourceTree = "<group>"; };
 		2C52DC4F227B496900E49BFC /* Teki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Teki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C52DC52227B496900E49BFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C52DC54227B496900E49BFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +31,7 @@
 		2C52DC69227B4ADB00E49BFC /* SF-Pro-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Medium.otf"; sourceTree = "<group>"; };
 		2C55BB6A227C6D37007CBCA6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2C55BB6C227C6D84007CBCA6 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		F38055F4516EC1481B703C53 /* Pods-Teki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Teki.debug.xcconfig"; path = "Target Support Files/Pods-Teki/Pods-Teki.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,8 @@
 			children = (
 				2C52DC51227B496900E49BFC /* Teki */,
 				2C52DC50227B496900E49BFC /* Products */,
+				A73DEF2C8BB177F2C4475C4C /* Pods */,
+				F890F5132F13BC9139C23FFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +88,22 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		A73DEF2C8BB177F2C4475C4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F38055F4516EC1481B703C53 /* Pods-Teki.debug.xcconfig */,
+				0201ACC6F7B36CBFD428F9B7 /* Pods-Teki.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F890F5132F13BC9139C23FFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -91,6 +111,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C52DC61227B496A00E49BFC /* Build configuration list for PBXNativeTarget "Teki" */;
 			buildPhases = (
+				2C55BB6F227C7E4C007CBCA6 /* ShellScript */,
+				6D8F0FC5C88FF06930FE59F4 /* [CP] Check Pods Manifest.lock */,
 				2C52DC4B227B496900E49BFC /* Sources */,
 				2C52DC4C227B496900E49BFC /* Frameworks */,
 				2C52DC4D227B496900E49BFC /* Resources */,
@@ -152,6 +174,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C55BB6F227C7E4C007CBCA6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		6D8F0FC5C88FF06930FE59F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Teki-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C52DC4B227B496900E49BFC /* Sources */ = {
@@ -304,6 +368,7 @@
 		};
 		2C52DC62227B496A00E49BFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38055F4516EC1481B703C53 /* Pods-Teki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +387,7 @@
 		};
 		2C52DC63227B496A00E49BFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0201ACC6F7B36CBFD428F9B7 /* Pods-Teki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
