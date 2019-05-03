@@ -9,18 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let Celebrity = ["le Zinedine Zidane ", "le Karl Lagarfeld ", "la Madonna ", "le Steve Jobs ", "le Neil Amstrong "]
-    let QuoteJoke = ["du surprise party !", "de la raclette party !", "de la chanson Francaise", "des soirée déguisé", "du karaoke party !"]
-
+    let celebrity = ["le Zinedine Zidane ", "le Karl Lagarfeld ", "la Madonna ", "le Steve Jobs ", "le Neil Amstrong "]
+    let quoteJoke = ["du surprise party !", "de la raclette party !", "de la chanson Francaise", "des soirée déguisé", "du karaoke party !"]
+    let myColor: UIColor = .random
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    @IBOutlet weak var LabelQuote: UILabel!
-    @IBAction func ChangeQuote() {
-        let Celebrities = Celebrity[Int(arc4random_uniform(UInt32(Celebrity.count)))]
-        let Activities = QuoteJoke[Int(arc4random_uniform(UInt32(QuoteJoke.count)))]
-
-        LabelQuote.text = "Je suis " + Celebrities + Activities
+    @IBOutlet weak var labelQuote: UILabel!
+    @IBAction func changeQuote() {
+        let celebrities = celebrity[Int(arc4random_uniform(UInt32(celebrity.count)))]
+        let activities = quoteJoke[Int(arc4random_uniform(UInt32(quoteJoke.count)))]
+        labelQuote.text = "Je suis " + celebrities + activities
+        labelQuote.textColor = UIColor.white
+        view.backgroundColor = .random
     }
 }
